@@ -25,16 +25,18 @@ class Globo
 
 ArrayList<Globo> globos;
 
-
+PImage Gianlu;
 void setup()
 {
   size(640,480);
   globos = new ArrayList<Globo>();  
+  Gianlu=loadImage("Gianlu.jpeg");
 }
 
 void draw()
 {
   background(50,89,0);
+  image(Gianlu, 35,0);
   for(int i=0;i<globos.size();i++)
   {
     globos.get(i).update();
