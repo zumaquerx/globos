@@ -18,6 +18,8 @@ class Globo
   void dibujate()
   {
       ellipse(x,y,60,100);
+      imageMode(CENTER);
+      image(Gianlu,x,y,60,100);
       triangle(x,y+50,x-10,y+60,x+10,y+60);
   }
   
@@ -36,7 +38,6 @@ void setup()
 void draw()
 {
   background(50,89,0);
-  image(Gianlu, 35,0);
   for(int i=0;i<globos.size();i++)
   {
     globos.get(i).update();
