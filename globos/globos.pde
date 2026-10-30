@@ -13,8 +13,8 @@ class Globo
 
   void update()
   {
-    y+=vy;
-    x+=vx;
+    y+=vy+1;
+    x+=vx+2;
   }
 
   void dibujate()
