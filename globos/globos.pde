@@ -21,6 +21,8 @@ class Globo
   {
     fill(c);  
     ellipse(x,y,60,100);
+    imageMode(CENTER);
+    image(Gianlu,x,y,60,100);
     triangle(x,y+50,x-10,y+60,x+10,y+60);
   }
   
@@ -28,11 +30,12 @@ class Globo
 
 ArrayList<Globo> globos;
 
-
+PImage Gianlu;
 void setup()
 {
   size(640,480);
   globos = new ArrayList<Globo>();  
+  Gianlu=loadImage("Gianlu.jpeg");
 }
 
 void draw()
